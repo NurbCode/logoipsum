@@ -31,7 +31,7 @@ ul {
     padding-block: 30px;
 }
 
-.header__container, .hero__container {
+.header__container, .hero__container, .companies__container {
     max-width: 1069px;
     margin: 0 auto;
 }
@@ -150,4 +150,14 @@ ul {
     position: absolute;
     top: 0;
     right: -75px;
+}
+
+.companies {
+    padding-block: 30px;
+}
+
+.companies__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
