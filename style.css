@@ -5,6 +5,11 @@
     --blue: #5454D4;
 }
 
+html {
+    scroll-padding: 100px;
+    scroll-behavior: smooth;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -28,10 +33,15 @@ ul {
 }
 
 .header {
+    position:fixed;
+    width: 100%;
+    background: white;
+    z-index: 2;
+    top: 0;
     padding-block: 30px;
 }
 
-.header__container, .hero__container, .companies__container {
+[class*="__container"] {
     max-width: 1069px;
     margin: 0 auto;
 }
@@ -83,6 +93,10 @@ ul {
 .header__button:hover {
     background-color: #fff;
     color: var(--btn-background);
+}
+
+main {
+    margin-top: 141px;
 }
 
 .hero {
@@ -160,4 +174,52 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.about {
+    padding-block: 80px;
+}
+
+.about__container {
+    display: flex;
+    flex-direction: column;
+    gap: 69px;
+}
+
+.about__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about__text {
+    max-width: 459px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.about__title {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57px;
+    letter-spacing: -1.56px;
+}
+
+.about__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: -0.63px;
+}
+
+.about__link {
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.53px;
+    color: var(--blue);
+}
+
+.about__link:hover {
+    text-decoration: underline;
 }
