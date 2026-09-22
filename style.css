@@ -22,6 +22,7 @@ body {
 
 p {
     font-family: 'Mulish', sans-serif;
+    color: var(--secondary);
 }
 
 a {
@@ -124,7 +125,6 @@ main {
     font-weight: 400;
     line-height: 30px;
     letter-spacing: -0.63px;
-    color: var(--secondary);
     margin-top: 30px;
 }
 
@@ -222,4 +222,46 @@ main {
 
 .about__link:hover {
     text-decoration: underline;
+}
+
+.features {
+    padding-block: 70px;
+}
+
+.features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 74px;
+}
+
+.feature {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.feature__header {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.feature__title {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: -0.75px;
+}
+
+.feature__desc {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+
+.feature__image {
+    height: 97px;
 }
