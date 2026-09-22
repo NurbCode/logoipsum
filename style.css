@@ -265,3 +265,132 @@ main {
 .feature__image {
     height: 97px;
 }
+
+.subscription {
+    padding-block: 80px 158px;
+}
+
+.subscription__container {
+    display: flex;
+    flex-direction: column;
+    gap: 82px;
+}
+
+.subscription__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subscription__header-title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: -1.88px;
+    max-width: 523px;
+}
+
+.subscription__header-buttons {
+    display: flex;
+    background-color: #F7F7FB;
+    border-block: 5px solid #F7F7FB;
+    border-inline: 6px solid #F7F7FB;
+    border-radius: 10px;
+}
+
+.subscription__header-button {
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: var(--primary);
+    border: none;
+    background-color: #F7F7FB;
+    padding: 17px 56px;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+}
+
+.subscription__header-button.active {
+    background-color: var(--blue);
+    color: #fff;
+    border-radius: 10px 0 0 10px;
+}
+
+.subscription__plans {
+    display: grid;
+    grid-template-columns: 1fr 1.14fr 1fr;
+    gap: 17px;
+    align-items: center;
+}
+
+.subscription__plan {
+    padding: 34px 22px 27px;
+    background-color: #F8F8F8;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.subscription__plan-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -0.56px;
+    color: var(--secondary);
+}
+
+.subscription__plan-price {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -1.03px;
+    color: var(--primary);
+    margin-top: 22px;
+}
+
+.subscription__plan-price>span {
+    font-size: 28px;
+}
+
+.subscription__plan-features {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: -0.53px;
+    margin-block: 28px 36px;
+}
+
+.subscription__plan-button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: -0.53px;
+    color: #5454D4;
+    padding: 19px 95px;
+    border-radius: 10px;
+    background-color: #fff;
+    border: 1px solid #EAE9F2;
+}
+
+.subscription__plan.active {
+    background-color: var(--btn-background);
+    padding: 50px 34px 43px;
+
+}
+
+.subscription__plan.active .subscription__plan-title {
+    color: rgba(255, 255, 255, 70%);
+}
+
+.subscription__plan.active .subscription__plan-price,
+.subscription__plan.active .subscription__plan-features,
+.subscription__plan.active .subscription__plan-button {
+    color: #fff;
+}
+
+.subscription__plan.active .subscription__plan-button {
+    background-color: #9F3919;
+    border-color: #9F3919;
+}
